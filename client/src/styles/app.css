@@ -1,0 +1,47 @@
+.app {
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  max-width: 60rem;
+}
+
+.header {
+  background: #33ffd7;
+  margin: 1.2rem, 0;
+}
+
+.header .subheader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+  color: #03045e;
+  font-weight: bold;
+}
+
+.header .subheader .para {
+  margin: 0.2rem, 0;
+}
+
+.heading-menu {
+  text-align: center;
+  font-family: "굴림", Arial, Helvetica, sans-serif;
+  color: #03045e;
+  margin: 0.5rem 0;
+}
+
+.heading-menu .heading-h1 {
+  font-size: 1.6rem;
+}
+
+.heading-menu .heading-p {
+  font-size: 0.9rem;
+}
+
+#renderBlud {
+  color: blue;
+  margin: 0 3px 0;
+}
+#renderRed {
+  color: red;
+  margin: 0 3px 0;
+}
