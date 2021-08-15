@@ -10,8 +10,6 @@ const DisplayCards = ({ location, time, pm10, pm25, no2 }) => {
 
   const cardImage = pm25 <= 35 ? clearSky : graySky
   const bg = pm25 <= 35 ? '#33FFD7': "#808080"
-
-
   
   return (
     <Col sm="4" >

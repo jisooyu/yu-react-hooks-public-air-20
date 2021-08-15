@@ -55,7 +55,7 @@ const AddForm = () => {
     }
              
     return (
-        <div style={{marginTop: "1rem"}}>
+        <div className="addForm">
             <Form onSubmit={onUpdateSubmit}>
                 <FormGroup>
                 <Label >Enter the location:{location}</Label>
