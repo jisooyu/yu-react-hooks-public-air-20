@@ -29,7 +29,7 @@ const AddForm = () => {
         try {
             const res = await axios.post( '/airdata/update', { location: location } )
             return setDataUpdated(true), setDataStatus("Data updated! Click Updage Button."), setLocation("")
-        } catch ( err ) {
+        } catch ( error ) {
             return setDataUpdated(false), setDataStatus("No data to update!"), setError("data not updated")
         }
     }

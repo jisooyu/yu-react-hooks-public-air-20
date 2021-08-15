@@ -1,7 +1,7 @@
-import React, { useEffect }  from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import { BrowserRouter, Route } from 'react-router-dom';
-import { fetchUser, fetchData, addData } from '../actions';
+import { fetchUser} from '../actions';
 
 import Header from './Header';
 import Display from './Display';
@@ -14,11 +14,6 @@ const App = () => {
 
   useEffect(()=> {
     dispatch(fetchUser())
-    dispatch(fetchData())
-  },[])
-
-  useEffect(()=> {
-    dispatch(addData())
   },[])
  
   return (

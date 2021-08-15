@@ -20,22 +20,19 @@ const Header = () => {
     }
     return (
         <div className="header">
-             
-        <div className="subheader">
-
-            <Link to={auth ?  '/display' : '/'}>
-                <p>Display</p>
-            </Link>
-            <Link to={ auth ? '/add' : '/' }>
-                <p>Add</p>
-            </Link>
-            <Link to={'/'}>
-                <p className="para">AQI Information Site</p>
-            </Link>
-            
-            <p>{renderContent()}</p> 
+            <div className="subheader">
+                <Link to={auth ?  '/display' : '/'}>
+                    <p>Display</p>
+                </Link>
+                <Link to={ auth ? '/add' : '/' }>
+                    <p>Add</p>
+                </Link>
+                <Link to={'/'}>
+                    <p className="para">AQI Information Site</p>
+                </Link>
+                <p>{renderContent()}</p> 
+            </div>
         </div>
-    </div>
     )
 }
 
