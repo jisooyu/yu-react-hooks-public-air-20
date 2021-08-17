@@ -28,9 +28,15 @@ const AddForm = () => {
         e.preventDefault();
         try {
             const res = await axios.post( '/airdata/update', { location: location } )
-            return setDataUpdated(true), setDataStatus("Data updated! Click Updage Button."), setLocation("")
-        } catch ( error ) {
-            return setDataUpdated(false), setDataStatus("No data to update!"), setError("data not updated")
+            setDataUpdated(true)
+            setDataStatus("Data updated! Click Updage Button.")
+            setLocation("")
+            return res
+        } catch ( err ) {
+            setDataUpdated(false)
+            setDataStatus("No data to update!")
+            setError("data not updated")
+            return error
         }
     }
 
@@ -42,7 +48,8 @@ const AddForm = () => {
                 setLocation("")
                 return dispatch(addData(airdata))
             }
-            return setDataFetched(false), setDataStatus("Loading..............")
+            setDataFetched(false)
+            setDataStatus("Loading..............")
         }
 
 
