@@ -11,10 +11,10 @@ const Header = () => {
             case null:
                 return 
             case false:
-                return <a href="/auth/google">Login With Google</a>
+                return <a key="1" href="/auth/google">Login With Google</a>
             default:
                 return [
-                    <a href="/api/logout">Logout</a>
+                    <a key="2" href="/api/logout">Logout</a>
                 ]
         }
     }

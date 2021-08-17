@@ -60,7 +60,7 @@ const AddForm = () => {
                 <FormGroup>
                 <Label >Enter the location:{location}</Label>
                 
-                <Input onChange={onLocationChange} Input/>
+                <Input onChange={onLocationChange} />
                 <br></br>
                 <p>UpdateDB Status:
                     {renderUpdate()}

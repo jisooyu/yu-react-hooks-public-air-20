@@ -25,7 +25,7 @@ const Display = () => {
                             <Row>
                                 {
                                     airdata.sort((a, b)=> a.time <= b.time ? 1:-1).map(
-                                        (air) =><DisplayCards { ...air } />
+                                        (air) =><DisplayCards { ...air } key={air._id} />
                                     )
                                 }
                             </Row>
