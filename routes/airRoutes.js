@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Air = mongoose.model('airs')
 
-const axdata = require( '../utils/axdata' )
+const axdata = require( '../axdata' )
 
 module.exports = app => {
     app.post( '/airdata/update', async ( req, res ) => {
@@ -16,6 +16,7 @@ module.exports = app => {
                 Air.findOne( { time: airquality.time, location:airquality.location }, ( err, doc ) => {
                     const air = new Air( {
                         location, time, pm10, pm25, no2
+                        
                     } = airquality  )
                     if ( doc ) {
                         console.log("Duplcate exists")
